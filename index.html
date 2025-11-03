@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> <!--codificación-->
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio Alberto</title>
+
+    <meta name="description" content="+2 años de experiencia en Tech">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Portfolio Alberto">
+    <meta property="og:description" content="2+ años de experiencia en Tech">
+    <meta property="og:image" content="" type="image/jpg">
+    <meta property="og:image:alt" content="">
+
+    <link rel="alternate" href="./" hreflang="es-MX">
+    <link rel="canonical" href="./">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+
+    <link rel="icon" href="" type="image/jpg">
+
+    <style>
+      body {
+        background: #09f;
+      }
+    </style>
+  </head>
+    <body>
+    <header>
+      <h1>Portfolio de Alberto</h1>
+      <nav>
+        <a href="#experiencia">Experiencia</a>
+      </nav>
+    </header>
+
+    <main>
+      <p>+2 años de experiencia en <strong>Tech</strong></p>
+
+      <h2 id="experiencia">Experiencia</h2>
+
+      <ul>
+        <li class="list-item">Kavak - 2021</li>
+        <li class="list-item">Egon solutions - 2023</li>
+      </ul>
+      <a download href="">
+        <img
+          id="photo-image"
+          class="photo-image"
+          width="200"
+          height="200"
+          title=""
+          alt=""
+          src=""
+        >
+      </a>
+
+      <section>
+        <h2>Formulario de contacto</h2>
+        <form action="./" method="post">
+          <fieldset>
+            <legend>Información personal</legend>
+            <div>
+              <label>
+                Nombre:
+                <input 
+                  type="text" 
+                  name="name" 
+                  placeholder="Alberto"
+                  required
+                >
+              </label>
+            </div>
+            <div>
+              <label>
+                Email:
+                <input 
+                  type="email" 
+                  name="email" 
+                  placeholder="alberto@mail.com"
+                  required
+                >
+              </label>
+            </div>            
+          </fieldset>
+          <fieldset>
+            <legend>Información adicional</legend>
+            <label>
+              Teléfono:
+              <input 
+                type="tel" 
+                name="tel" 
+                placeholder="Alberto"
+                required
+                pattern="[0-9]{9}"
+              >
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Otros</legend>
+            <div>
+              <label for="why">¿Por qué quieres contactar?</label>
+              <select name="why" id="why">
+                <option value="1">Trabajo</option>
+                <option value="2">Duda</option>
+                <option value="3">Más información</option>
+              </select>
+            </div>
+            <div>
+              <label for="terms">¿Aceptas los términos?</label>
+              <input type="checkbox" name="terms" id="terms" required>
+            </div>
+            <div>
+              <datalist id="languages">
+                <option value="JavaScript"></option>
+                <option value="TypeScript"></option>
+                <option value="C#"></option>
+                <option value="VisualBasic"></option>
+              </datalist>
+              <label>
+                ¿Con qué lenguaje quieres que te ayude?
+                <input list="languages" name="languages">
+              </label>
+            </div>            
+          </fieldset>
+          <input type="submit" value="Enviar contacto">
+        </form>
+      </section>
+    </main>
+    <footer>
+      Copyright 2025 - El portfolio más bello del mundo
+    </footer>
+  </body>
+</html>
+  
