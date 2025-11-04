@@ -22,8 +22,46 @@
     <link rel="icon" href="" type="image/jpg">
 
     <style>
+      h1 {
+        /* color: rgb(0 0 0 / 50%); */
+        /* color: hsl(60, 83%, 44%); */
+        /* color: oklch(348 83% 44% / 50%); */
+        color: #09f;
+        /* border-width: 3px;
+        border-style: solid;
+        border-color: currentcolor; */
+        font-family: monospace;
+      }
+
       body {
+        background: #dbfbff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      .link {
+        color: red;
+      }
+
+      .link:hover {
+        outline: 10px solid red;
+      }
+
+      .link:active {
+        outline: 10px solid blue;
+      }
+
+      #show {
         background: #09f;
+        color: white;
+        border: 0;
+      }
+
+      li:first-child {
+        color: pink;
+      }
+
+      li:last-child {
+        color: purple;
       }
     </style>
   </head>
@@ -31,7 +69,7 @@
     <header>
       <h1>Portfolio de Alberto</h1>
       <nav>
-        <a href="#experiencia">Experiencia</a>
+        <a class="link" href="#experiencia">Experiencia</a>
       </nav>
     </header>
 
@@ -60,7 +98,7 @@
     <video controls src="" width="200" height="200"></video>
 
     <main>
-      <p>+2 años de experiencia en <strong>Tech</strong></p>
+      <p class="description">2+ años de experiencia en <strong>Tech</strong></p>
 
       <h2 id="experiencia">Experiencia</h2>
 
