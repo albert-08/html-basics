@@ -27,13 +27,37 @@
       }
     </style>
   </head>
-    <body>
+  <body>
     <header>
       <h1>Portfolio de Alberto</h1>
       <nav>
         <a href="#experiencia">Experiencia</a>
       </nav>
     </header>
+
+    <dialog id="dialog">
+      <h1>¿Sabías que puedes abrir una modal así?</h1>
+      <p>¡Y es totalmente nativo!</p>
+      <button id="hide">Cerrar modal</button>
+    </dialog>
+
+    <button id="show">Ver más información</button>
+
+    <script>
+      window.show.addEventListener('click', () => {
+        window.dialog.showModal()
+      })
+
+      window.hide.addEventListener('click', () => {
+        window.dialog.close();
+      })
+    </script>
+
+    <iframe style="width:100%; aspect-ratio:16/9;" src="https://www.youtube.com/embed/3nYLTiY5skU?si=MnP1q7JT_z8bghYt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <audio controls src=""></audio>
+
+    <video controls src="" width="200" height="200"></video>
 
     <main>
       <p>+2 años de experiencia en <strong>Tech</strong></p>
@@ -46,6 +70,7 @@
       </ul>
       <a download href="">
         <img
+          loading="lazy"
           id="photo-image"
           class="photo-image"
           width="200"
@@ -55,6 +80,22 @@
           src=""
         >
       </a>
+
+      <section>
+        <h2>Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Qué estudios tienes?</summary>
+          <p>Estudié el bachillerato bilingüe en PrepaTec</p>
+        </details>
+        <details>
+          <summary>¿Cuáles son tus hobbies?</summary>
+          <p>Me gusta mucho la música principalmente el piano y el canto</p>
+        </details>
+        <details>
+          <summary>¿Cuál es tu lenguaje favorito?</summary>
+          <p>Me encanta JavaScript, es un lenguaje muy versatil y con el que se pueden hacer muchas cosas</p>
+        </details>
+      </section>
 
       <section>
         <h2>Formulario de contacto</h2>
@@ -124,7 +165,7 @@
               </label>
             </div>            
           </fieldset>
-          <input type="submit" value="Enviar contacto">
+          <button>Enviar contacto</button>
         </form>
       </section>
     </main>
